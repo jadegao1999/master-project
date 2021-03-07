@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+.left-picture-container {
+  display: flex;
+}
+
+.right-picture-container {
+  display: flex;
+}
