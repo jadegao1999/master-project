@@ -16,6 +16,7 @@
   min-height: 30%;
   padding-bottom: 16px;
   word-wrap: break-word;
+  line-height: 160%;
 }
 
 .dialog-text-item {

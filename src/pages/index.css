@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 .body {
   height: 100vh;
+  font-family: 'Lora', serif;
   overflow: hidden;
   background-image: linear-gradient(#a2c5eb, #427a7d);
 }
