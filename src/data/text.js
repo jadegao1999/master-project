@@ -7,9 +7,9 @@ const textList = [
   new Narrative('1', '<<< Click on the cheongsam on the left to wear it on.'),
   new Narrative('2', 'You pick up the old cheongsam (a traditional Chinese dress) you just ironed and wear it on.'),
   new Narrative('3', 'It suddenly reminds you that you wore it seven years ago, also on a blind date, where you met your unfaithful, violent ex-husband.'),
-  new Narrative('4', 'Although it may be unlucky, it\'s the only formal wear you have left, and you have no budget for a new dress.')
-  new Narrative('5', 'Maybe putting on your favourite pearl earrings will add some luck.')
-  new Narrative('6', '<<< Click on the pearl earrings on the left to put them on.')
+  new Narrative('4', 'Although it may be unlucky, it\'s the only formal wear you have left, and you have no budget for a new dress.'),
+  new Narrative('5', 'Maybe putting on your favourite pearl earrings will add some luck.'),
+  new Narrative('6', '<<< Click on the pearl earrings on the left to put them on.'),
   new Dialog('7', '"Liusu, what are you doing?! "', null, 'door'),
   new Narrative('8', 'You hear your mother, Lady Bai, calling your name from the other side of the house.'),
   new Dialog('9', '"come over here and help your sister!" ', null, 'door'),
