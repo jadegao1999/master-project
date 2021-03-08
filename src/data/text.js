@@ -4,6 +4,7 @@ import { Dialog, Narrative } from "../models/text_content";
 const textList = [
   // prolog
   new Narrative('0', 'Tonight, you and your younger sister, ${Baoluo}, are going on a blind date at Paramount, the biggest nightclub in Shanghai in 1940. The party will start in an hour.'),
+  // baoluo - baoluo card pops up on left
   new Narrative('1', '<<< Click on the cheongsam on the left to wear it on.'),
   new Narrative('2', 'You pick up the old cheongsam (a traditional Chinese dress) you just ironed and wear it on.'),
   new Narrative('3', 'It suddenly reminds you that you wore it seven years ago, also on a blind date, where you met your unfaithful, violent ex-husband.'),
@@ -24,9 +25,11 @@ const textList = [
   new Narrative('17', 'She ties a final piece of green jade around Baoluo\'s neck and turns to you.'),
   new Dialog('18', '"Oh, you are wearing them! See, I thought it\'s a good match for the color of Baoluo\'s cheongsum."', null, 'old lady bai'),
   new Narrative('19', 'Hah! But, those are your favorite ones, and you are wearing them NOW!'),
-  // button here: Take them off and give them to Baoluo/Insist on wearing them yourslef
+  // button here: choice1 - take them off and give them to Baoluo
   new Dialog('20', '"Here."', null, 'liusu-green'),
   new Narrative('21', 'Hah! But, those are your favorite ones, and you are wearing them NOW!'),
+  
+  // choice2 - insist on wearing them yourslef
 
 
 

@@ -4,8 +4,11 @@ import { textMap } from './text';
 const storyNodeMap = {
   0: new StoryNode(
     '0', 
-    [textMap['0'], textMap['1'], textMap['2'], textMap['3'], textMap['4'], textMap['5']], 
+    //narrative and dialog number
+    [textMap['0'], textMap['1'], textMap['2'], textMap['3'], textMap['4'], textMap['5']],
+    //next passage number
     ['1', '2'], 
+    //choice content
     ['YES', 'NO']),
   1: new StoryNode(
     '1', 
