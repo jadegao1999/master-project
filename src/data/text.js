@@ -14,6 +14,8 @@ const textList = [
   new Dialog('9', '"come over here and help your sister!" ', null, 'door'),
   new Narrative('10', 'What? They still need more help? Everyone in the house is in that room dressing up Baoluo, and they almost upturn the house!'),
   new Narrative('11', 'What a glittering beauty! You can hardly recognize Baoluo. And the delicate cheongsam and jewelry on her – for sure you haven\'t seen such luxuries in the decayed Bai family for years.'),
+  new Dialog('12', '"Mom forced our sister-in-law to hand over the fine silk she just got as a birthday gift to make me this cheongsam..." ', null, 'baoluo'),
+  new Narrative('13', 'Seeing you with a puzzled face, Baoluo explains'),
 ];
 
 const textMap = {};
