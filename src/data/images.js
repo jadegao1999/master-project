@@ -29,7 +29,7 @@ export const imagesMap = {
   liusu_green: new Person('liusu_green', 'liusu_green', liusu_green),
   liusu_yellow: new Person('liusu_yellow', 'liusu_yellow', liusu_yellow),
   yellow_dress: new Item('yellow_dress', 'yellow_dress', yellow_dress),
-  liuyuan: new Person('liuyuan', 'liuyuan', liuyuan);
+  liuyuan: new Person('liuyuan', 'liuyuan', liuyuan),
   old_lady_bai: new Person('old_lady_bai', 'old_lady_bai', old_lady_bai),
   old_lady_bai_card: new Item('old_lady_bai_card', 'old_lady_bai_card', old_lady_bai_card),
   sister_in_law: new Person('sister_in_law', 'sister_in_law', sister_in_law),
