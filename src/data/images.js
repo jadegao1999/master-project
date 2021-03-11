@@ -15,7 +15,7 @@ import old_lady_bai_card from '../assets/images/old_lady_bai_card.png';
 import sister_in_law from '../assets/images/sister_in_law.png';
 import taxi from '../assets/images/taxi.png';
 import box from '../assets/images/box.png';
-import { Person, Item } from '../models/picture';
+import { Person, Item, InteractiveItem } from '../models/picture';
 
 export const imagesMap = {
   baoluo_card: new Item('baoluo_card', 'baoluo profile card', baoluo_card),

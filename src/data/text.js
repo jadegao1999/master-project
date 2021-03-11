@@ -1,5 +1,5 @@
 // All text content including dialog and narrative.
-import { Dialog, Narrative } from "../models/text_content";
+import { Dialog, Narrative, Action } from "../models/text_content";
 
 const textList = [
   // prolog
@@ -10,7 +10,7 @@ const textList = [
   new Narrative('3', 'It suddenly reminds you that you wore it seven years ago, also on a blind date, where you met your unfaithful, violent ex_husband.', null, [null, 'liusu_green']),
   new Narrative('4', 'Although it may be unlucky, it\'s the only formal wear you have left, and you have no budget for a new dress.'),
   new Narrative('5', 'Maybe putting on your favourite pearl earrings will add some luck.', null, ['earrings', 'liusu_green']),
-  new Narrative('6', '<<< Click on the pearl earrings on the left to put them on.'),
+  new Action('6', '<<< Click on the pearl earrings on the left to put them on.'),
   new Dialog('7', '"Liusu, what are you doing?! "', null, 'door', ['door', 'liusu_earrings']),
   new Narrative('8', 'You hear your mother, Lady Bai, calling your name from the other side of the house.', null),
   new Dialog('9', '"come over here and help your sister!" ', null, 'door'),
