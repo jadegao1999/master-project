@@ -57,6 +57,20 @@ const textList = [
   new Narrative('46', 'Liuyuan smiles and nods to both of you. His eyes linger on you for a while.', null),
   new Narrative('47', 'You share quick eye contact with Baoluo, finding she\'s blushing and can hardly speak. This is why Lady Bai forced you to be here - Baoluo is always shy in public.', null, ['baoluo', 'liusu_green']),
   //button here: Introduce yourself to attract his attention
+  new Dialog('48', '"Hi, I am Liusu. Nice to meet you. Welcome back to Shanghai!"', null, 'liusu_green', ['liuyuan', 'liusu_green']),
+  new Narrative('49', 'You pause, not knowing what else to say. Seeing you ignoring her, Baoluo unhappily pulls the corner of your dress.', null),
+  new Dialog('50', '“Shanghai is now different indeed."', null, 'liuyuan', ['liuyuan', 'liusu_green']),
+  new Dialog('51', '“I remember when I was a little boy, about 25 years ago, there was no ballroom at all."', null, 'liuyuan'),
+  new Dialog('52', '“Of course, there was also no woman as charming as either of you."', null, 'liuyuan'),
+  new Narrative('53', 'He gives you a deep look and sips his wine.', null, ['liuyuan', 'liusu_green']),
+  new Narrative('54', 'A man like him is probably very picky. You can\'t interpret this signal. Is he implying something? Or does this mean Baoluo will have a chance?.', null),
+  new Dialog('55', '"So... you grew up in Shanghai?"', null, 'baoluo',['baoluo', 'liusu_green']),
+  new Narrative('56', 'You are shocked that Baoluo has the courage to talk to Liuyuan.', null, ['liuyuan', 'liusu_green']),
+  new Dialog('57', '"I stayed in Shanghai until I was eight, and then I followed my mother to London to reunite with my father"', null, 'liuyuan'),
+
+
+
+
   
 
 
