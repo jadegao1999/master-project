@@ -42,10 +42,39 @@ const textList = [
   new Narrative('33', 'After all, who would take your remarriage seriously? And, is a remarriage that important to you?', null),
   new Narrative('34', 'At the appointed time, all family members cram into a taxi-cab.', null, ['taxi', 'liusu_green']),
   //button here: Arrive at Paramount (GiCarWheel)
-  new Narrative('35', 'As the largest ballroom in Shanghai, Paramount shines with dazzling lights under the night sky. It\'s been too long since the last time you\'ve to a place like this. ', null),
-  new Narrative('36', 'You have a feeling that tonight you are only invited because Baoluo needs a companion.', null),
-  new Narrative('37', 'After all, who would take your remarriage seriously? And, is a remarriage that important to you?', null),
-  new Narrative('38', 'At the appointed time, all family members cram into a taxi-cab.', null, ['taxi', 'liusu_green']),
+  new Narrative('35', 'As the largest ballroom in Shanghai, Paramount shines with dazzling lights under the night sky. It\'s been too long since the last time you\'ve to a place like this. ', null, ['baoluo', 'liusu_earrings']),
+  new Narrative('36', 'As you are stunned by its glory, you hear a voice inside your mind:', null),
+  new Dialog('37', '"This could be an important night that will change your life. You might want to think twice before you make a decision. Would you like to learn more before you walk into that door?"', null),
+  //button here: Walk inside
+  new Narrative('38', 'The family is immediately led inside. In the center of the lobby, a group of women surround a young man who is smiling gently and talking. It’s as if being surrounded is a thing that relaxes him.', null, ['baoluo', 'liusu_green']),
+  new Dialog('39', '"That must be Liuyuan!"', null, 'baoluo'),
+  new Narrative('40', 'Baoluo holds your hand and whispers beside your ear. You can tell by one peak that he is good at dealing with women.', null),
+  new Narrative('41', 'Lady Bai pushes you and Baoluo into that circle around Liuyuan.', null, ['liuyuan', 'liusu_green'] ),
+  new Narrative('42', 'Up close, Liuyuan cannot be called handsome, but he has a unique quality that is different from the Shanghai men you know.', null),
+  new Narrative('43', 'He has brown hair and a tall body, with wide shoulders and long legs.', null),
+  new Narrative('44', 'You don\'t believe in love at first sight - especially after the divorce. But at this moment, your heart races again.', null),
+  new Dialog('45', '"Hi."', null, 'liuyuan'),
+  new Narrative('46', 'Liuyuan smiles and nods to both of you. His eyes linger on you for a while.', null),
+  new Narrative('47', 'You share quick eye contact with Baoluo, finding she\'s blushing and can hardly speak. This is why Lady Bai forced you to be here - Baoluo is always shy in public.', null, ['baoluo', 'liusu_green']),
+  //button here: Introduce yourself to attract his attention
+  new Dialog('48', '"Hi, I am Liusu. Nice to meet you. Welcome back to Shanghai!"', null, 'liusu_green', ['liuyuan', 'liusu_green']),
+  new Narrative('49', 'You pause, not knowing what else to say. Seeing you ignoring her, Baoluo unhappily pulls the corner of your dress.', null),
+  new Dialog('50', '“Shanghai is now different indeed."', null, 'liuyuan', ['liuyuan', 'liusu_green']),
+  new Dialog('51', '“I remember when I was a little boy, about 25 years ago, there was no ballroom at all."', null, 'liuyuan'),
+  new Dialog('52', '“Of course, there was also no woman as charming as either of you."', null, 'liuyuan'),
+  new Narrative('53', 'He gives you a deep look and sips his wine.', null, ['liuyuan', 'liusu_green']),
+  new Narrative('54', 'A man like him is probably very picky. You can\'t interpret this signal. Is he implying something? Or does this mean Baoluo will have a chance?.', null),
+  new Dialog('55', '"So... you grew up in Shanghai?"', null, 'baoluo',['baoluo', 'liusu_green']),
+  new Narrative('56', 'You are shocked that Baoluo has the courage to talk to Liuyuan.', null, ['liuyuan', 'liusu_green']),
+  new Dialog('57', '"I stayed in Shanghai until I was eight, and then I followed my mother to London to reunite with my father"', null, 'liuyuan'),
+
+
+
+
+  
+
+
+  
 
 
   
