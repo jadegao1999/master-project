@@ -18,6 +18,10 @@
   height: 33%;
 }
 
+.animation {
+  animation: fadeIn 0.5s ease-in both;
+}
+
 .text-item p span {
   color: yellow;
 }
@@ -44,4 +48,11 @@
 
 .action-text-item p {
   color: orange;
+}
+
+/* React CSS Transition rules */
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

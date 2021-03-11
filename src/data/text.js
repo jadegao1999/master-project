@@ -5,12 +5,12 @@ const textList = [
   // prolog
   new Narrative('0', 'Tonight, you and your younger sister, ${Baoluo}, are going on a blind date at Paramount, the biggest nightclub in Shanghai in 1940. The party will start in an hour.', ['baoluo_card'], [null, 'liusu_yellow']),
   // baoluo - baoluo card pops up on left
-  new Narrative('1', '<<< Click on the cheongsam on the left to wear it on.', null, ['green_dress', 'liusu_yellow']),
+  new Action('1', '<<< Click on the cheongsam on the left to wear it on.', null, ['green_dress', 'liusu_yellow']),
   new Narrative('2', 'You pick up the old cheongsam (a traditional Chinese dress) you just ironed and wear it on.', null, ['yellow_dress', 'liusu_green']),
   new Narrative('3', 'It suddenly reminds you that you wore it seven years ago, also on a blind date, where you met your unfaithful, violent ex_husband.', null, [null, 'liusu_green']),
   new Narrative('4', 'Although it may be unlucky, it\'s the only formal wear you have left, and you have no budget for a new dress.'),
   new Narrative('5', 'Maybe putting on your favourite pearl earrings will add some luck.', null),
-  new Action('6', '<<< Click on the pearl earrings on the left to put them on.', ['earrings', 'liusu_green']),
+  new Action('6', '<<< Click on the pearl earrings on the left to put them on.', null, ['earrings', 'liusu_green']),
   new Dialog('7', '"Liusu, what are you doing?! "', null, 'door', ['door', 'liusu_earrings']),
   new Narrative('8', 'You hear your mother, Lady Bai, calling your name from the other side of the house.', null),
   new Dialog('9', '"come over here and help your sister!" ', null, 'door'),

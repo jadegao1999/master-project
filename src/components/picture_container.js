@@ -1,36 +1,56 @@
 import React, { Component } from "react";
 import { InteractiveItem } from "../models/picture";
+import SwitchTransition from "react-transition-group/SwitchTransition";
+import { CSSTransition } from 'react-transition-group';
 
 import './picture_container.css';
 
 export default class PictureContainer extends Component {
+  constructor() {
+    super();
+    this.renderActionButton = this.renderActionButton.bind(this);
+    this.renderPicture = this.renderPicture.bind(this);
+  }
   
  renderPicture() {
+   const { imageModel } = this.props;
+
+  if (imageModel == null) return (<div></div>)
+
   return (
-    <img
-      key={this.props.imageModel.id}
-      src={this.props.imageModel.image}
-      alt="Liusu"
-      width={200}
-      height={400}
-    />
+    <div>
+      <img
+        key={imageModel.id}
+        src={imageModel.image}
+        alt={imageModel.description}
+      />
+      {(imageModel != null && imageModel instanceof InteractiveItem) 
+        && this.renderActionButton()}
+    </div>
   )
  }
 
  renderActionButton() {
+   const { onActionButtonClick } = this.props;
+
    return (
-     <div className="action-button" onClick={this.props.callback}></div>
+     <div className="action-button" onClick={onActionButtonClick}></div>
    )
  }
 
   render() {
     const { imageModel } = this.props;
+    var key = imageModel == null ? 'no_image' : imageModel.id;
     return (
-      <div className={this.props.className}>
-        {(imageModel != null) && this.renderPicture()}
-        {(imageModel != null && imageModel instanceof InteractiveItem) 
-          && this.renderActionButton()}
-      </div>  
+        <div className={this.props.className}>
+          <SwitchTransition mode="out-in">
+            <CSSTransition key={key}
+                          classNames="image"
+                          timeout={300}>
+              {this.renderPicture()}
+            </CSSTransition>
+          </SwitchTransition>
+        </div>  
     )
   }
 }

@@ -16,7 +16,7 @@ export default class TextArea extends Component {
         <div 
         className="decision-item" 
         key={index} 
-        onClick={() => selectDecision(index)}>{decision}</div>)
+        onClick={(e) => { e.stopPropagation(); selectDecision(index)}}>{decision}</div>)
     );
   }
 

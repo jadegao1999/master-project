@@ -3,6 +3,7 @@ import reactStringReplace from 'react-string-replace';
 import ScrollSnap from 'scroll-snap'
 import { TextContent, Dialog, Narrative, Action } from '../models/text_content';
 
+
 import './text_area.css';
 
 function callback() {
@@ -62,13 +63,20 @@ export default class TextArea extends Component {
       } else if (textContent instanceof Action) {
         className = ' action-text-item';
       }
-      res.push(
-        <div 
-            key={textContent.id} 
-            className={className}>
-          <p>{this.formatText(textContent, callback)}</p>
-        </div>
-      );
+
+      if (i == textContentList.length - 1) {
+        res.push(
+            <div key={i} className={className + " animation"}>
+              <p>{this.formatText(textContent, callback)}</p>
+            </div>
+        );
+      } else {
+        res.push(
+          <div key={i} className={className}>
+            <p>{this.formatText(textContent, callback)}</p>
+          </div>
+        )
+      }
     }
 
     return res;
@@ -77,7 +85,7 @@ export default class TextArea extends Component {
   render() {
     return (
       <div ref={this.container} className='text-area'>
-        {this.renderTextList()}
+          {this.renderTextList()}
       </div>  
     )
   }

@@ -37,7 +37,7 @@ export default class App extends Component {
     this.nextText = this.nextText.bind(this);
     this.onDecisionClick = this.onDecisionClick.bind(this);
     this.showCard = this.showCard.bind(this);
-    this.handleInteractiveItemClick = this.handleInteractiveItemClick(this);
+    this.handleInteractiveItemClick = this.handleInteractiveItemClick.bind(this);
   }
 
   // Populates the next passage in text area on click.
@@ -117,7 +117,7 @@ export default class App extends Component {
         <PictureContainer 
             className="left picture-container" 
             imageModel={this.state.leftImage}
-            callback={this.handleInteractiveItemClick}/>
+            onActionButtonClick={this.handleInteractiveItemClick}/>
         <div className='text-container'>
           <TextArea className="text-area" 
                     textContentList={this.state.allTextContent}

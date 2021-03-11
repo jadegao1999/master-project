@@ -5,8 +5,7 @@ img {
 .picture-container {
   display: flex;
   position: relative;
-  height: 400px;
-  width: 200px;
+  width: 20vw;
   margin: 30px;
 }
 
@@ -23,4 +22,24 @@ img {
 
 .action-button:hover {
   cursor: pointer;
+}
+
+/* React CSS Transition rules */
+
+.image-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.image-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+.image-exit {
+  opacity: 1;
+}
+.image-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1000ms, transform 1000ms;
 }
