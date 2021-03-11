@@ -42,7 +42,10 @@ const textList = [
   new Narrative('33', 'After all, who would take your remarriage seriously? And, is a remarriage that important to you?', null),
   new Narrative('34', 'At the appointed time, all family members cram into a taxi-cab.', null, ['taxi', 'liusu_green']),
   //button here: Arrive at Paramount (GiCarWheel)
-
+  new Narrative('35', 'As the largest ballroom in Shanghai, Paramount shines with dazzling lights under the night sky. It\'s been too long since the last time you\'ve to a place like this. ', null),
+  new Narrative('36', 'You have a feeling that tonight you are only invited because Baoluo needs a companion.', null),
+  new Narrative('37', 'After all, who would take your remarriage seriously? And, is a remarriage that important to you?', null),
+  new Narrative('38', 'At the appointed time, all family members cram into a taxi-cab.', null, ['taxi', 'liusu_green']),
 
 
   
