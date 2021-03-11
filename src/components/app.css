@@ -1,14 +1,9 @@
 .app {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 150px;
 }
 
-.left-picture-container {
-  display: flex;
-}
-
-.right-picture-container {
-  display: flex;
+.text-container {
+  margin-bottom: 200px;
 }

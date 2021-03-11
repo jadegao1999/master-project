@@ -16,12 +16,12 @@ const storyNodeMap = {
     ['3', '4'],
     ['left', 'right']),
   2: new StoryNode(
-    '1', 
+    '2', 
     [textMap['0'], textMap['1'], textMap['2'], textMap['3'], textMap['4'], textMap['5']], 
     ['4', '5'],
     ['left', 'right']),
   3: new StoryNode(
-    '1', 
+    '3', 
     [textMap['0'], textMap['1'], textMap['2'], textMap['3'], textMap['4'], textMap['5']], 
     ['6', '7'],
     ['left', 'right']),

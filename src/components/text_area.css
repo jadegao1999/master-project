@@ -1,7 +1,7 @@
 .text-area {
   overflow-y: scroll;
   height: auto;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column-reverse;
   padding: 0 80px;
@@ -12,17 +12,24 @@
 }
 
 .text-item {
-  height: 30%;
-  min-height: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 33%;
+}
+
+.text-item p span {
+  color: yellow;
+}
+
+.text-item p span:hover {
+  cursor: pointer;
+}
+
+.narrative-text-item p {
   padding-bottom: 16px;
   word-wrap: break-word;
   line-height: 160%;
-}
-
-.dialog-text-item {
-  /* background-image: url('../assets/images/dialog_box.png');
-  background-repeat: no-repeat;
-  background-size: 700px 50px; */
 }
 
 .dialog-text-item p {
@@ -32,4 +39,9 @@
   background-size: 100%;
   background-position: center;
   padding: 40px 60px;
+  margin: 0;
+}
+
+.action-text-item p {
+  color: orange;
 }

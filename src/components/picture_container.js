@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { InteractiveItem } from "../models/picture";
+
+import './picture_container.css';
 
 export default class PictureContainer extends Component {
   
@@ -14,10 +17,19 @@ export default class PictureContainer extends Component {
   )
  }
 
+ renderActionButton() {
+   return (
+     <div className="action-button" onClick={this.props.callback}></div>
+   )
+ }
+
   render() {
+    const { imageModel } = this.props;
     return (
       <div className={this.props.className}>
-        {this.renderPicture()}
+        {(imageModel != null) && this.renderPicture()}
+        {(imageModel != null && imageModel instanceof InteractiveItem) 
+          && this.renderActionButton()}
       </div>  
     )
   }

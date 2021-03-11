@@ -18,8 +18,15 @@ class Item extends Picture {
   }
 }
 
+class InteractiveItem extends Picture {
+  constructor(id, description, image) {
+    super(id, description, image);
+  }
+}
+
 export {
   Picture,
   Person,
   Item,
+  InteractiveItem
 }
