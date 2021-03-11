@@ -67,6 +67,23 @@ const textList = [
   new Dialog('55', '"So... you grew up in Shanghai?"', null, 'baoluo',['baoluo', 'liusu_green']),
   new Narrative('56', 'You are shocked that Baoluo has the courage to talk to Liuyuan.', null, ['liuyuan', 'liusu_green']),
   new Dialog('57', '"I stayed in Shanghai until I was eight, and then I followed my mother to London to reunite with my father"', null, 'liuyuan'),
+  new Narrative('58', 'The speaker inside Paramount rings loudly in a sudden:', null, ['liuyuan', 'liusu_green']),
+  new Dialog('59', '"Ladies and gentlemen, are you ready? Our first dance is about to begin!"', null, 'liuyuan'),
+  //button here: ...?!
+  new Narrative('60', 'Wait, first dance? Are you going to dance tonight?', null, ['baoluo', 'liusu_green']),
+  new Narrative('61', 'You also find the same shock on Baoluo\'s face. ', null),
+  new Narrative('62', 'In traditional Shanghai at this time, decent ladies aren\'t taught to dance. Only trendy teenagers who practice secretly.', null),
+  new Narrative('63', 'Unfortunately, Baolu is not one of them - she can\'t dance! NOT AT ALL.', null),
+  new Narrative('64', 'But you are different. Your ex-husband likes to go to beautiful dance halls like this, and he is a good dance teacher.', null),
+  new Narrative('65', 'God knows how much you miss the days of spinning on the dance floor!', null),
+  new Dialog('66', '"Liusu, you know how to dance, right? I can see that. How about the first dance with me?"', null, 'liuyuan', ['liuyuan', 'liusu_green']),
+  new Narrative('67', 'He approaches you and bows.', null),
+  new Narrative('68', 'Baoluo\'s face turns pale. Your brothers stare at you. Everyone is shocked.', null),
+  new Narrative('69', 'For so many years, you have been looked down upon by the Bai family; this may be a good opportunity to fight back. But you also know that it\'s not a good idea to show-off here.', null),
+  //buttons here: 
+
+
+
 
 
 
