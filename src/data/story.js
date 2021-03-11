@@ -55,7 +55,7 @@ const storyNodeMap = {
     ['Walk inside', 'More context']),
   9: new StoryNode(
     '9', 
-    [ttextMap['60'], textMap['61'], textMap['62'], textMap['63'], textMap['64'], textMap['65'], textMap['66'], textMap['67'], textMap['68'], textMap['69']], 
+    [textMap['60'], textMap['61'], textMap['62'], textMap['63'], textMap['64'], textMap['65'], textMap['66'], textMap['67'], textMap['68'], textMap['69']], 
     ['10', '11'],
     ['Take Liuyuan\'s hand and agree to dance.', 'Recommend he dances with Baolu instead.']),
 
