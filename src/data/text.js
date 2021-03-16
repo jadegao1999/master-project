@@ -21,7 +21,7 @@ const textList = [
   new Narrative('13', 'Seeing you with a puzzled face, Baoluo explains,'),
   new Dialog('14', '"and she pawned her very own old furs to buy me these bracelets and rings..." ', null, 'baoluo'),
   new Narrative('15', 'No one ever cared about what you wear. You don\'t hate Baoluo, it\'s just two daughters in the same house, but one gets lots of attention, and the other gets cold silence, and sadly you are used to that.'),
-  new Dialog('16', '"There is no time to talk nonsense to your sister now. Liusu, your sister needs a pair of good earrings. I remember you still have a pair of pearl ones."', null, 'old lady bai', ['old_lady_bai', 'liusu_earrings']),
+  new Dialog('16', '"There is no time to talk nonsense to your sister now. Liusu, your sister needs a pair of good earrings. I remember you still have a pair of pearl ones."', null, 'old_lady_bai', ['old_lady_bai', 'liusu_earrings']),
   new Narrative('17', 'She ties a final piece of green jade around Baoluo\'s neck and turns to you.'),
   new Dialog('18', '"Oh, you are wearing them! See, I thought it\'s a good match for the color of Baoluo\'s cheongsum."', null, 'old_lady_bai'),
   new Narrative('19', 'Hah! But, those are your favorite ones, and you are wearing them NOW!'),

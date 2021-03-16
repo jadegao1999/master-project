@@ -4,5 +4,6 @@
   height: 100vh;
   font-family: 'Lora', serif;
   overflow: hidden;
-  background-image: linear-gradient(#a2c5eb, #427a7d);
+  background-color: #7b929a;
+  color: black;
 }

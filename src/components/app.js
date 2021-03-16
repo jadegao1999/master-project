@@ -98,6 +98,7 @@ export default class App extends Component {
 
     this.storyNode = nextStoryNode;
     this.setState({
+      allTextContent: [],
       isCurrentChapterEnded: false,
     }, 
     // Populate the first passage in next story node.
@@ -121,6 +122,8 @@ export default class App extends Component {
         <div className='text-container'>
           <TextArea className="text-area" 
                     textContentList={this.state.allTextContent}
+                    leftImage={this.state.leftImage}
+                    rightImage={this.state.rightImage}
                     callback={this.showCard}/>
           { this.state.isCurrentChapterEnded && 
             <DecisionArea 

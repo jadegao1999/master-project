@@ -59,9 +59,14 @@ export default class TextArea extends Component {
       if (textContent instanceof Narrative) {
         className += ' narrative-text-item';
       } else if (textContent instanceof Dialog) {
+        let isLeft = this.isDialogOnLeft(textContent);
+        console.log(`No: ${i}, isDialogLeft: ${isLeft}`);
         className += ' dialog-text-item';
+        className += isLeft ? 
+            ' bubble-left' : 
+            ' bubble-right';
       } else if (textContent instanceof Action) {
-        className = ' action-text-item';
+        className += ' action-text-item';
       }
 
       if (i == textContentList.length - 1) {
@@ -80,6 +85,20 @@ export default class TextArea extends Component {
     }
 
     return res;
+  }
+
+  isDialogOnLeft(dialog) {
+    const { leftImage, rightImage } = this.props;
+    console.log(`left: ${leftImage.id}, right: ${rightImage.id}`);
+    console.log(`speaker: ${dialog.speakerId}`);
+
+    if (dialog.speakerId == null) {
+      return false;
+    }
+    if (leftImage.id != null && dialog.speakerId == leftImage.id) {
+      return true;
+    }
+    return false;
   }
 
   render() {
