@@ -1,9 +1,13 @@
 .app {
   display: flex;
   justify-content: space-between;
-  margin-top: 150px;
+  height: 100%;
 }
 
 .text-container {
-  margin-bottom: 200px;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 6vw;
+  flex-grow: 1;
 }

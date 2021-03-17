@@ -11,7 +11,8 @@ function callback() {
 }
 
 export default class TextArea extends Component {
-  container = React.createRef()
+  container = React.createRef();
+  textEndRef = React.createRef();
 
   bindScrollSnap() {
     const element = this.container.current
@@ -26,6 +27,13 @@ export default class TextArea extends Component {
     // this.bindScrollSnap()
   }
 
+  componentDidUpdate() {
+    this.scrollToBottom();
+  }
+
+  scrollToBottom = () => {
+    this.textEndRef.current.scrollIntoView({ behavior: "smooth" });
+  }
 
   formatText(textContent, callback) {
     if (textContent.onClickImageList == null || textContent.onClickImageList.length == null) {
@@ -88,14 +96,10 @@ export default class TextArea extends Component {
   }
 
   isDialogOnLeft(dialog) {
-    const { leftImage, rightImage } = this.props;
-    console.log(`left: ${leftImage.id}, right: ${rightImage.id}`);
-    console.log(`speaker: ${dialog.speakerId}`);
-
     if (dialog.speakerId == null) {
       return false;
     }
-    if (leftImage.id != null && dialog.speakerId == leftImage.id) {
+    if (dialog.speakerId == 'left') {
       return true;
     }
     return false;
@@ -104,6 +108,7 @@ export default class TextArea extends Component {
   render() {
     return (
       <div ref={this.container} className='text-area'>
+          <div ref={this.textEndRef} />
           {this.renderTextList()}
       </div>  
     )

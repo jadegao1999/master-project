@@ -3,11 +3,20 @@ img {
   max-height: 450px;
 }
 
+img.item {
+  margin-bottom: 20vh; 
+}
+
 .picture-container {
   display: flex;
+  min-width: 200px;
+  margin: 0 30px;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: flex-end;
   position: relative;
-  width: 20vw;
-  margin: 30px;
 }
 
 .action-button {

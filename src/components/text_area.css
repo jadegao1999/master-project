@@ -1,7 +1,7 @@
 .text-area {
   overflow-y: scroll;
   height: auto;
-  height: 300px;
+  height: 45vh;
   display: flex;
   flex-direction: column-reverse;
   padding: 0 80px;
@@ -15,7 +15,6 @@
 .text-item {
   display: flex;
   justify-content: left;
-  height: 33%;
 }
 
 .animation {
@@ -31,7 +30,6 @@
 }
 
 .narrative-text-item p {
-  padding-bottom: 16px;
   word-wrap: break-word;
   line-height: 160%;
 }

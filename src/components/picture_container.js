@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { InteractiveItem } from "../models/picture";
+import { Person, InteractiveItem } from "../models/picture";
 import SwitchTransition from "react-transition-group/SwitchTransition";
 import { CSSTransition } from 'react-transition-group';
 
@@ -17,9 +17,12 @@ export default class PictureContainer extends Component {
 
   if (imageModel == null) return (<div></div>)
 
+  var imageClassName = (imageModel instanceof Person) ? 'person' : 'item';
+
   return (
-    <div>
+    <div className="image-wrapper">
       <img
+        className={imageClassName}
         key={imageModel.id}
         src={imageModel.image}
         alt={imageModel.description}
