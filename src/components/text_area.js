@@ -75,8 +75,8 @@ export default class TextArea extends Component {
             ' bubble-left' : 
             ' bubble-right';
         className += isLeft ?
-            ` ${leftImage.id}` :
-            ` ${rightImage.id}`;
+            ` ${textContent.images[0]}` :
+            ` ${textContent.images[1]}`;
       } else if (textContent instanceof Action) {
         className += ' action-text-item';
       }
