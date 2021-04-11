@@ -9,7 +9,9 @@ const storyNodeMap = {
     //next node number
     ['1'], 
     //choice content
-    ['Walk to your mother\'s room']),
+    ['Walk to your mother\'s room'],
+    '1988',
+    'Shanghai'),
   1: new StoryNode(
     '1', 
     [textMap['11'], textMap['12'], textMap['13'], textMap['14'], textMap['15'], textMap['16'], textMap['17'], textMap['18'], textMap['19']], 

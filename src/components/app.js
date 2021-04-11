@@ -19,10 +19,12 @@ export default class App extends Component {
 
     this.state = {
       // storyNode: storyStartNode,
-      allTextContent: [new TextContent('99999', 'Click screen to start')],
+      isReset: true,
+      allTextContent: [],
       isCurrentChapterEnded: false,
       leftImage: null,
       rightImage: null,
+      cardImage: null,
       isCardShowing: false,
       isActionPending: false,
     };
@@ -44,18 +46,25 @@ export default class App extends Component {
   nextText() {
     const { allTextContent, isCardShowing, isActionPending } = this.state;
 
+    if (this.state.isReset) {
+      this.setState({isReset: false});
+    }
+
+    if (isCardShowing) {
+      // Remove card but do not populate next text.
+      this.setState({
+        isCardShowing: false,
+        cardImage: null,
+      });
+      return;
+    }
+
     console.log(`isActionPending: ${isActionPending}`);
     if (isActionPending) {
       return;
     }
     
-    if (isCardShowing) {
-      // Remove card but do not populate next text.
-      this.setState({
-        isCardShowing: false,
-        leftImage: null,
-      });
-    } else if (this.storyNode.textIndex < this.storyNode.textContentList.length) {
+    if (this.storyNode.textIndex < this.storyNode.textContentList.length) {
       // Show next text.
       var textContent = this.storyNode.textContentList[this.storyNode.textIndex];
       allTextContent.push(textContent);
@@ -86,7 +95,7 @@ export default class App extends Component {
   // Render Character description card on screen.
   showCard(cardId) {
     this.setState({
-      leftImage: imagesMap[cardId],
+      cardImage: imagesMap[cardId],
       isCardShowing: true,
     });
   }
@@ -115,23 +124,30 @@ export default class App extends Component {
     console.log(`is current ended: ${this.state.isCurrentChapterEnded}`);
     return (
       <div className="app" onClick={this.nextText}>
-        <PictureContainer 
-            className="left picture-container" 
-            imageModel={this.state.leftImage}
-            onActionButtonClick={this.handleInteractiveItemClick}/>
-        <div className='text-container'>
-          <TextArea className="text-area" 
-                    textContentList={this.state.allTextContent}
-                    leftImage={this.state.leftImage}
-                    rightImage={this.state.rightImage}
-                    callback={this.showCard}/>
-          { this.state.isCurrentChapterEnded && 
-            <DecisionArea 
-                decisionList={this.storyNode.decisionTextList}
-                selectDecision={this.onDecisionClick} /> 
-          }
+        <div className="time-and-place">
+          { !this.state.isReset && <div>{`${this.storyNode.time}, ${this.storyNode.place}`}</div> }
         </div>
-        <PictureContainer className="right picture-container" imageModel={this.state.rightImage}/>
+        <div className="main-container">
+          { this.state.isReset && <div className="start-message">Click screen to start</div> }
+          <PictureContainer 
+              className="left picture-container" 
+              imageModel={this.state.leftImage}
+              cardImage={this.state.cardImage}
+              onActionButtonClick={this.handleInteractiveItemClick}/>
+          <div className='text-container'>
+            <TextArea className="text-area" 
+                      textContentList={this.state.allTextContent}
+                      leftImage={this.state.leftImage}
+                      rightImage={this.state.rightImage}
+                      callback={this.showCard}/>
+            { this.state.isCurrentChapterEnded && 
+              <DecisionArea 
+                  decisionList={this.storyNode.decisionTextList}
+                  selectDecision={this.onDecisionClick} /> 
+            }
+          </div>
+          <PictureContainer className="right picture-container" imageModel={this.state.rightImage}/>
+          </div>
       </div>  
     )
   }

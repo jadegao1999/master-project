@@ -13,21 +13,28 @@ export default class PictureContainer extends Component {
   }
   
  renderPicture() {
-   const { imageModel } = this.props;
+   var image;
+   const { imageModel, cardImage } = this.props;
 
-  if (imageModel == null) return (<div></div>)
+  if (imageModel == null && cardImage == null) return (<div></div>)
 
-  var imageClassName = (imageModel instanceof Person) ? 'person' : 'item';
+  if (cardImage != null) {
+    image = cardImage; 
+  } else {
+    image = imageModel;
+  }
+
+  var imageClassName = (image instanceof Person) ? 'person' : 'item';
 
   return (
     <div className="image-wrapper">
       <img
         className={imageClassName}
-        key={imageModel.id}
-        src={imageModel.image}
-        alt={imageModel.description}
+        key={image.id}
+        src={image.image}
+        alt={image.description}
       />
-      {(imageModel != null && imageModel instanceof InteractiveItem) 
+      {(image != null && image instanceof InteractiveItem) 
         && this.renderActionButton()}
     </div>
   )
