@@ -58,12 +58,13 @@ export default class TextArea extends Component {
   }
 
   renderTextList() {
-    const { textContentList, callback} = this.props;
+    const { textContentList, callback, leftImage, rightImage } = this.props;
     const res = [];
     
     for (let i = textContentList.length - 1; i >= 0; i--) {
       let textContent = textContentList[i];
       let className = 'text-item';
+      let pClassName = '';
       if (textContent instanceof Narrative) {
         className += ' narrative-text-item';
       } else if (textContent instanceof Dialog) {
@@ -73,6 +74,9 @@ export default class TextArea extends Component {
         className += isLeft ? 
             ' bubble-left' : 
             ' bubble-right';
+        className += isLeft ?
+            ` ${leftImage.id}` :
+            ` ${rightImage.id}`;
       } else if (textContent instanceof Action) {
         className += ' action-text-item';
       }
@@ -80,16 +84,17 @@ export default class TextArea extends Component {
       if (i == textContentList.length - 1) {
         res.push(
             <div key={i} className={className + " animation"}>
-              <p>{this.formatText(textContent, callback)}</p>
+              <p className={pClassName}>{this.formatText(textContent, callback)}</p>
             </div>
         );
       } else {
         res.push(
           <div key={i} className={className}>
-            <p>{this.formatText(textContent, callback)}</p>
+            <p className={pClassName}>{this.formatText(textContent, callback)}</p>
           </div>
         )
       }
+
     }
 
     return res;

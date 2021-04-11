@@ -45,8 +45,8 @@
 }
 
 .dialog-text-item p {
+  color: black;
   display: inline-block;
-  background-color: #eaebe1;
   border-radius: 12px;
   padding: 20px 40px;
   margin: 0;
@@ -58,9 +58,9 @@
   height: 0px;
   position: absolute;
   border-left: 25px solid transparent;
-  border-right: 20px solid #eaebe1;
+  border-right: 20px solid currentColor;
   border-top: 16px solid transparent;
-  border-bottom: 16px solid #eaebe1;
+  border-bottom: 16px solid currentColor;
   left: -25px;
   bottom: 12px;
 }
@@ -71,15 +71,58 @@
   height: 0px;
   position: absolute;
   border-right: 25px solid transparent;
-  border-left: 20px solid #eaebe1;
+  border-left: 20px solid currentColor;
   border-top: 16px solid transparent;
-  border-bottom: 16px solid #eaebe1;
+  border-bottom: 16px solid currentColor;
   right: -25px;
   bottom: 12px;
 }
 
 .action-text-item p {
   color: orange;
+}
+
+/* character's dialog color. */
+.liusu_yellow, .liusu_green, .liusu_earrings {
+  color: red;
+}
+.liusu_yellow p, .liusu_green p, .liusu_earrings p {
+  background-color: red;
+}
+
+.baoluo, .baoluo_earrings {
+  color: yellow;
+}
+.baoluo p, .baoluo_earrings p {
+  background-color: yellow;
+}
+
+.door {
+  color: blue;
+}
+.door p {
+  background-color: blue;
+}
+
+.old_lady_bai {
+  color: green;
+}
+.old_lady_bai p {
+  background-color: green;
+}
+
+.liuyuan {
+  color: pink;
+}
+.liuyuan p {
+  background-color: pink;
+}
+
+.sister_in_law {
+  color: sienna;
+}
+.sister_in_law p {
+  background-color: sienna;
 }
 
 /* React CSS Transition rules */
