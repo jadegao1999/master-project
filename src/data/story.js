@@ -6,48 +6,41 @@ const storyNodeMap = {
     '0', 
     //narrative and dialog number
     [textMap['0'], textMap['1'], textMap['2'], textMap['3'], textMap['4'], textMap['5'], textMap['6'], textMap['7'], textMap['8'], textMap['9'], textMap['10']],
-<<<<<<< Updated upstream
-    ['1'],  // next story node number
-    ['Walk to your mother\'s room'],  // choices
-    '1988',  // year
-    'Shanghai',  // location
-    '#aaa'),  // background color
-=======
     //next node number
     ['1'], 
     //choice content
     ['Walk to your mother\'s room'],
     '1941 Dec 1st, 7PM',
-    'Your room'),
->>>>>>> Stashed changes
+    'Your room',
+    '#7B929A'),
+
   1: new StoryNode(
     '1', 
     [textMap['11'], textMap['12'], textMap['13'], textMap['14'], textMap['15'], textMap['16'], textMap['17'], textMap['18'], textMap['19']], 
     ['2', '3'],
     ['Take them off', 'Insist on wearing them'],
-<<<<<<< Updated upstream
-    '1888',
-    'Nanjing',
-    '#ccc'),
-=======
     '1941 Dec 1st, 7PM',
-    'Your mother\'s room'),
->>>>>>> Stashed changes
+    'Your mother\'s room',
+    '#B2B1B0'),
+
   2: new StoryNode(
     '2', 
     [textMap['20'], textMap['21'], textMap['22'], textMap['23'], textMap['24'], textMap['25'], textMap['26'], textMap['27'], textMap['28'], textMap['29'], textMap['30'], textMap['31'], textMap['32'], textMap['33'], textMap['34']], 
     ['5'],
     ['Arrive at Paramount'],
     '1941 Dec 1st, 8PM',
-    'Your mother\'s room'),
-  //node 3 not finished
+    'Your mother\'s room',
+    '#D8CBB8'),
+  
+    //node 3 not finished
   3: new StoryNode(
     '3', 
     [textMap['0'], textMap['1'], textMap['2'], textMap['3'], textMap['4'], textMap['5']], 
     ['5'],
     ['Arrive at Paramount'],
     '1941 Dec 1st, 8PM',
-    'Your mother\'s room'),
+    'Your mother\'s room',
+    '#D8CBB8'),
   // 4: new StoryNode(
   //   '4', 
   //   [textMap['35'], textMap['36'], textMap['37']], 
@@ -59,7 +52,8 @@ const storyNodeMap = {
     ['7', '8'],
     ['Introduce yourself', 'Introduce Baoluo as your little sister'],
     '1941 Dec 1st, 8PM',
-    'Paramount'),
+    'Paramount',
+    '#B2B1B0'),
   //node 6 not finished
   // 6: new StoryNode(
   //   '4', 
@@ -72,20 +66,23 @@ const storyNodeMap = {
     ['9'],
     ['...?!'],
     '1941 Dec 1st, 8PM',
-    'Paramount'),
+    'Paramount',
+    '#B2B1B0'),
   //node 8 not finished - introduce Baoluo
   8: new StoryNode(
     '8', 
     [textMap['35'], textMap['36'], textMap['37']], 
     ['9', '10'],
     ['Walk inside', 'More context']),
+
   9: new StoryNode(
     '9', 
     [textMap['60'], textMap['61'], textMap['62'], textMap['63'], textMap['64'], textMap['65'], textMap['66'], textMap['67'], textMap['68'], textMap['69']], 
     ['10', '11'],
     ['Take Liuyuan\'s hand and agree to dance.', 'Recommend he dances with Baolu instead.'],
     '1941 Dec 1st, 8PM',
-    'Paramount'),
+    'Paramount',
+    '#B2B1B0'),
 
   10: new StoryNode(
     '10', 
@@ -93,7 +90,8 @@ const storyNodeMap = {
     ['12'],
     ['Take a break.'],
     '1941 Dec 1st, 9PM',
-    'Paramount'),
+    'Paramount',
+    '#B2B1B0'),
 
 // 11 not finished
 
@@ -103,7 +101,8 @@ const storyNodeMap = {
     ['13', '14'],
     ['Follow Liuyuan', 'Stay and apologize to Baoluo'],
     '1941 Dec 1st, 9PM',
-    'Paramount'),
+    'Paramount',
+    '#B2B1B0'),
 
   13: new StoryNode(
     '13', 
@@ -111,7 +110,8 @@ const storyNodeMap = {
     ['15'],
     ['You suddenly cannot breathe'],
     '1941 Dec 1st, 10PM',
-    'Garden'),
+    'Garden',
+    '#C7C6B2'),
 
   15: new StoryNode(
     '15', 
@@ -119,7 +119,8 @@ const storyNodeMap = {
     ['16', '17'],
     ['Agree with him', 'Confront him'],
     '1941 Dec 1st, 10PM',
-    'Garden'),
+    'Garden',
+    '#C7C6B2'),
 
     // Starting from this point the order 16 is not right, only for presentation purpose
   16: new StoryNode(
@@ -128,7 +129,8 @@ const storyNodeMap = {
     ['18'],
     ['Enter end state'],
     '1941 Dec 8th, 8AM',
-    'Rented house in Hong Kong'),  
+    'Rented house in Hong Kong',
+    '#7B929A'),  
 
 
   18: new StoryNode(
@@ -136,7 +138,8 @@ const storyNodeMap = {
   [textMap['119'], textMap['120'], textMap['121'], textMap['122'], textMap['123'], textMap['124'], textMap['125'], textMap['126'], textMap['127'], textMap['128']], 
   ['Enter end state'],
   '1941 Dec 8th, 8AM',
-  'Jiang\'s house in Shanghai'),  
+  'Jiang\'s house in Shanghai',
+  '#7B929A'),  
   
 }
 

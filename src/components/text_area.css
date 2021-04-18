@@ -79,50 +79,50 @@
 }
 
 .action-text-item p {
-  color: orange;
+  color: #3E1E1E;
 }
 
 /* character's dialog color. */
 .liusu_yellow, .liusu_green, .liusu_earrings {
-  color: red;
+  color: #EAE8E1;
 }
 .liusu_yellow p, .liusu_green p, .liusu_earrings p {
-  background-color: red;
+  background-color: #EAE8E1;
 }
 
 .baoluo, .baoluo_earrings {
-  color: yellow;
+  color: #D3BE9F;
 }
 .baoluo p, .baoluo_earrings p {
-  background-color: yellow;
+  background-color: #D3BE9F;
 }
 
 .door {
-  color: blue;
+  color: white;
 }
 .door p {
-  background-color: blue;
+  background-color: white;
 }
 
 .old_lady_bai {
-  color: green;
+  color: #988A8E;
 }
 .old_lady_bai p {
-  background-color: green;
+  background-color: #988A8E;
 }
 
 .liuyuan {
-  color: pink;
+  color: #A3A2AE;
 }
 .liuyuan p {
-  background-color: pink;
+  background-color: #A3A2AE;
 }
 
 .sister_in_law {
-  color: sienna;
+  color: #B19FA4;
 }
 .sister_in_law p {
-  background-color: sienna;
+  background-color: #B19FA4;
 }
 
 /* React CSS Transition rules */

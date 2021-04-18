@@ -142,25 +142,31 @@ const textList = [
 
   
   //War Hong Kong
-  new Narrative('100', 'You are awakened by the sound of a huge cannon, and you can even feel the crack of a screaming bomb slapping you hard in the face.', null, 'left', ['liuyuan', 'liusu_green']),
-  new Dialog('101', '"War is on, war is on!"', null, 'left', ['door', 'liusu_green']),
-  new Narrative('102', 'With the sound of closing the door, you see the maid rushing into your room yelling.', null),
-  new Dialog('103', '"The Japanese are here to bomb Hong Kong!"', null, 'left'),
-  new Narrative('104', 'But, but there is even no food at home! ', null),
-  new Narrative('105', 'In the following days, you are exhausted and weak, sharing the last cookies with the maid. Just as you are thinking about the end of your life, you hear a knock on the door.', null),
-  new Dialog('106', '"Go get your things together, hurry!"', null, 'left', ['liuyuan', 'liusu_green']),
-  new Narrative('107', 'The two of you rush around the house and stuff your bags, and lie down on the truck Liuyuan gets.', null),
-  new Dialog('106', '"My ship wasn\'t able to leave"', null, 'left'),
-  new Dialog('106', 'Now I am trapped here.', null, 'left'),
-  new Narrative('107', 'Along with other first class passengers on the ship, you stay in the Repulse Bay Hotel for a couple of days. Guests are offered just enough food to sustain.', null),
+  new Narrative('108', 'You are awakened by the sound of a huge cannon, and you can even feel the crack of a screaming bomb slapping you hard in the face.', null, ['liuyuan', 'liusu_green']),
+  new Dialog('109', '"War is on, war is on!"', null, 'left', ['door', 'liusu_green']),
+  new Narrative('110', 'With the sound of closing the door, you see the maid rushing into your room yelling.', null),
+  new Dialog('111', '"The Japanese are here to bomb Hong Kong!"', null, 'left'),
+  new Narrative('112', 'But, but there is even no food at home! ', null),
+  new Narrative('113', 'In the following days, you are exhausted and weak, sharing the last cookies with the maid. Just as you are thinking about the end of your life, you hear a knock on the door.', null),
+  new Dialog('114', '"Go get your things together, hurry!"', null, 'left', ['liuyuan', 'liusu_green']),
+  new Narrative('115', 'The two of you rush around the house and stuff your bags, and lie down on the truck Liuyuan gets.', null),
+  new Dialog('116', '"My ship wasn\'t able to leave"', null, 'left'),
+  new Dialog('117', '"Now I am trapped here."', null, 'left'),
+  new Narrative('118', 'Along with other first class passengers on the ship, you stay in the Repulse Bay Hotel for a couple of days. Guests are offered just enough food to sustain.', null),
+
+  //War Shanghai
+  new Narrative('119', 'One day, Jiang comes home from work.', null, ['jiang', 'liusu_green']),
+  new Dialog('120', '"The Japanese army has occupied Shanghai, and now the customs office is under Japan\'s control. I am really worried."', null, 'left', ['jiang', 'liusu_green']),
+  new Narrative('121', 'Jiang\'s worry is not unreasonable. ', null),
+  new Narrative('122', ' Shanghai is now completely silent, factories have closed down, waterways have been cut off, and supplies are scarce. The living expenses are way higher than before.', null),
+  new Narrative('123', 'Jiang flips through his wallet and licks his lips,', null),
+  new Dialog('124', '"this month\'s salary was not paid. Can you ask Bai family to lend us some money? We can\'t let the kids starve."', null, 'left'),
+  new Dialog('125', '"Ask them yourself."', null, 'right'),
+  new Narrative('126', ' You laugh ironically.', null),
+  new Narrative('127', 'There is no doubt that the Bai family rejects him immediately -- they can\'t take care of it themselves.', null),
+  new Narrative('128', 'Liuyuan didn\'t pick Baoluo at last, and you hear that he stays in England after his return and never comes back.', null),
 
 
-  
-
-
-  
-  
-  
 
 
 
