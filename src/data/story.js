@@ -117,7 +117,7 @@ const storyNodeMap = {
 
   15: new StoryNode(
     '15', 
-    [textMap['100'], textMap['101'], textMap['102'], textMap['103'], textMap['104'], textMap['105'], textMap['105']], 
+    [textMap['100'], textMap['101'], textMap['102'], textMap['103'], textMap['104'], textMap['105'], textMap['106'], textMap['107']], 
     ['16', '17'],
     ['Agree with him', 'Confront him'],
     '10PM, Dec 1st, 1941',
