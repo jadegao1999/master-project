@@ -3,7 +3,7 @@ import { Dialog, Narrative, Action } from "../models/text_content";
 
 const textList = [
   // prolog
-  new Narrative('0', 'Tonight, you and your younger sister, ${Baoluo}, are going on a blind date at Paramount, the biggest nightclub in Shanghai in 1940. The party will start in an hour.', ['baoluo_card'], [null, 'liusu_yellow']),
+  new Narrative('0', 'Tonight, you and your younger sister, ${Baoluo}, are invited by your family friend, Mrs.Xu, to go on a blind date at Paramount, the biggest nightclub in Shanghai. The party will start in an hour.', ['baoluo_card'], [null, 'liusu_yellow']),
   // baoluo - baoluo card pops up on left
   new Action('1', '<<< Click on the cheongsam on the left to wear it on.', null, ['green_dress', 'liusu_yellow']),
   new Narrative('2', 'You pick up the old cheongsam (a traditional Chinese dress) you just ironed and wear it on.', null, ['yellow_dress', 'liusu_green']),
@@ -41,11 +41,27 @@ const textList = [
   new Narrative('32', 'You have a feeling that tonight you are only invited because Baoluo needs a companion.', null),
   new Narrative('33', 'After all, who would take your remarriage seriously? And, is a remarriage that important to you?', null),
   new Narrative('34', 'At the appointed time, all family members cram into a taxi-cab.', null, ['taxi', 'liusu_green']),
+// button here: choice2 - insist on wearing yourself
+  // new Dialog('20', '"Here."', null, 'right', ['baoluo','liusu_green']),
+  // new Narrative('21', 'You take off the earrings and hand them over to Baoluo.', null, ['baoluo_earrings', 'liusu_green']),
+  // new Dialog('22', '"Thanks Liusu! I told mom that this is your favorite pair, but she ..."', null, 'left', ['baoluo','liusu_green']),
+  // new Narrative('23', 'Baoluo seems sorry.', null),
+  // new Dialog('24', '"I\'m doing this for you!"', null, 'left', ['old_lady_bai', 'liusu_green']),
+  // new Narrative('25', 'Lady Bai interrupts again.', null),
+  // new Dialog('26', '"Mothers in Shanghai are pushing their daughters to the party. You have to stand out.  It\'s hard to find a perfect marriage candidate like Liuyuan."', null, 'left', ['old_lady_bai', 'liusu_green']),
+  // new Dialog('27', '"I heard that his family owns a successful business in London, and he is the ONLY SON!!"', null, 'left', ['old_lady_bai', 'liusu_green']),
+  // new Dialog('28', '"Aside from that..."', null, 'left', ['sister_in_law', 'liusu_green']),
+  // new Narrative('29', 'Your sister-in-laws on the side echo.', null),
+  // new Dialog('30', '"He is also young and unattached! If Baoluo can climb this high branch, our Bai family may be able to bring back the past glories.."', null, 'left', ['sister_in_law', 'liusu_green']),
+  // new Narrative('31', 'They go on and on about how ideal this Liuyuan is.', null),
+  // new Narrative('32', 'You have a feeling that tonight you are only invited because Baoluo needs a companion.', null),
+  // new Narrative('33', 'After all, who would take your remarriage seriously? And, is a remarriage that important to you?', null),
+  // new Narrative('34', 'At the appointed time, all family members cram into a taxi-cab.', null, ['taxi', 'liusu_green']),
   //button here: Arrive at Paramount (GiCarWheel)
-  new Narrative('35', 'As the largest ballroom in Shanghai, Paramount shines with dazzling lights under the night sky. It\'s been too long since the last time you\'ve to a place like this. ', null, ['baoluo', 'liusu_earrings']),
-  new Narrative('36', 'As you are stunned by its glory, you hear a voice inside your mind:', null),
-  new Dialog('37', '"This could be an important night that will change your life. You might want to think twice before you make a decision. Would you like to learn more before you walk into that door?"', null),
-  //button here: Walk inside
+  // new Narrative('35', 'As the largest ballroom in Shanghai, Paramount shines with dazzling lights under the night sky. It\'s been too long since the last time you\'ve to a place like this. ', null, ['baoluo', 'liusu_earrings']),
+  // new Narrative('36', 'As you are stunned by its glory, you hear a voice inside your mind:', null),
+  // new Dialog('37', '"This could be an important night that will change your life. You might want to think twice before you make a decision. Would you like to learn more before you walk into that door?"', null),
+  // button here: Walk inside
   new Narrative('38', 'The family is immediately led inside. In the center of the lobby, a group of women surround a young man who is smiling gently and talking. It’s as if being surrounded is a thing that relaxes him.', null, ['baoluo', 'liusu_green']),
   new Dialog('39', '"That must be Liuyuan!"', null, 'left', ['baoluo', 'liusu_green']),
   new Narrative('40', 'Baoluo holds your hand and whispers beside your ear. You can tell by one peak that he is good at dealing with women.', null),
@@ -80,24 +96,71 @@ const textList = [
   new Narrative('67', 'He approaches you and bows.', null),
   new Narrative('68', 'Baoluo\'s face turns pale. Your brothers stare at you. Everyone is shocked.', null),
   new Narrative('69', 'For so many years, you have been looked down upon by the Bai family; this may be a good opportunity to fight back. But you also know that it\'s not a good idea to show-off here.', null),
-  //buttons here: 
+  //buttons here: dance with Liuyuan
+  new Narrative('70', 'Under people\'s shocked eyes, you and Liuyuan slip onto the dance floor.', null, ['liuyuan', 'liusu_green']),
+  new Dialog('71', '"I didn\'t expect you to dance so well."', null, 'left'),
+  new Narrative('72', 'Liuyuan\'s voice whispers into your ears, like the sound of a low cello', null),
+  new Dialog('73', '"And I have to admit, I love making fun of people - I didn\'t know you would accept my invitation. You are really special."', null, 'left'),
+  new Narrative('74', 'You can sense the heat passing through his hands, and you can even feel his heartbeat, combined with yours.', null),
+  new Narrative('75', 'You haven\'t felt so good for years - people are watching you, talking about you, admiring you. Who said your life is over? Even Liuyuan, who was the perfect match for Baoluo, favors you more.', null),
+  new Narrative('76', 'Several songs have played, but to you, soon the music ends - you never know the time topass so quickly.', null),
+  new Dialog('77', '“You know, we should dance all night. You are born for the dance floor!"', null, 'left'),
+  new Narrative('78', 'He leaves a gentle kiss on your hand and winks.', null),
+  new Dialog('79', '"But now, you must be tired, I\'ll go and get you some drinks."', 'left', null),
+  new Narrative('80', 'The warmth of his lips left on your hand takes your breath away, blanking your mind for a second.', null),
+  //button here: take a break
+  new Narrative('81', 'As soon as you sit down for some rest, the old Lady Bai and your sisters-in-law come over with Baoluo crying.', null, ['old_lady_bai', 'liusu_green']),
+  new Dialog('82', '"I really don\'t understand what you are doing! Liuyuan is not the match for you!"', null, 'left'),
+  new Dialog('83', '"Have you ever thought about this family?"', null, 'left'),
+  new Dialog('84', '"What are we here for? Are we here to dance?"', null, 'left', ['sister_in_law', 'liusu_green']),
+  new Narrative('85', 'Your sisters-in-law interject', null),
+  new Dialog('86', '"This is really inappropriate! You are a divorced woman who returns to her mother\'s family, but you let your sister wait while you dance in public with Liuyuan?"', null, 'left'),
+  new Narrative('87', 'They continue to babble and don\'t even give you any chance to talk.', null),
+  new Dialog('88', '"If you run into a suitable man, it would be nice for us all. But when you were dancing, there was a Mr. Jiang who stated directly that you are outrageous!"', null, 'left'),
+  new Dialog('89', '"Who dares to marry you? You won\'t stay in our house forever, will you?"', null, 'left'),
+  new Narrative('90', 'Thank God they finally stop when Liuyuan approaches. Liuyuan hands you a glass of wine and turns to your family.', null, ['liuyuan', 'liusu_green']),
+  new Dialog('91', '"Do you mind if I borrow her for a while?"', null, 'left'),
+  new Narrative('92', 'Such a LIFESAVER! It\'s perfect timing to sneak away, but you do feel sorry for Baoluo.', null),
+  //button here: follow liuyuan
+  new Narrative('93', 'You pass through the people who are networking and enter the garden. As Liuyuan walks, you slowly follow. ', null, ['liuyuan', 'liusu_green']),
+  new Dialog('94', 'You know, when I met you in the hallway, I was thinking, If I could get you away from your family, you might be more at ease."', null, 'left'),
+  new Narrative('95', 'He seems to be more sincere when the two of you are alone, and he is so clever to understand what happened. ', null),
+  new Dialog('96', '"I grew up in England, so I might think differently, I hope I don’t offend you."', null, 'left'),
+  new Narrative('97', 'He pauses shortly.', null),
+  new Dialog('98', '"But I don\'t want to be the bad guy who hurts you in the end. I know Chinese people value marriage, and maybe you need one right now, just like all other girls I\'ve talked to in this party."', null, 'left'),
+  new Dialog('99', '"I don\'t want to marry anyone for the time being. Maybe one day I will, but certainly not now, not in the near future."', null, 'left'),
+  //button here: you cannot breathe
+  new Narrative('100', 'Seeing you have been silent, he goes on. ', null, 'left', ['liuyuan', 'liusu_green']),
+  new Narrative('101', 'I do business in Hong Kong a lot, and I think you would like it there too. We can go dancing, go to  watch operas, go shopping...', null, 'left'),
+  new Narrative('102', 'Bullshit! You feel that you are being played by him in his hands. Clearly, he wants you, but he doesn\'t want to marry you.', null),
+  new Narrative('103', 'His innocence is fake - it\'s just that he doesn\'t want to take that responsibility. Without a legal marriage, you will never have long-term security. ', null),
+  new Narrative('104', 'But on the other hand, so what? He likes you, and you may never meet another man like him again. ', null),
+  new Narrative('105', 'Even without marriage, you can stay away from the Bai family and, more importantly, finally live for yourself. ', null),
+  new Dialog('106', '"Such a beautiful night is not suitable for unhappy things. Maybe you think it is too sudden, but I really like you. Give me time, and I\'ll make you happy."', null, 'left'),
+  new Narrative('107', 'He stares at you, waiting for your answer.', null),
+  //button here: unfinished - agree
 
-
-
-
-
+  
+  //War Hong Kong
+  new Narrative('100', 'You are awakened by the sound of a huge cannon, and you can even feel the crack of a screaming bomb slapping you hard in the face.', null, 'left', ['liuyuan', 'liusu_green']),
+  new Dialog('101', '"War is on, war is on!"', null, 'left', ['door', 'liusu_green']),
+  new Narrative('102', 'With the sound of closing the door, you see the maid rushing into your room yelling.', null),
+  new Dialog('103', '"The Japanese are here to bomb Hong Kong!"', null, 'left'),
+  new Narrative('104', 'But, but there is even no food at home! ', null),
+  new Narrative('105', 'In the following days, you are exhausted and weak, sharing the last cookies with the maid. Just as you are thinking about the end of your life, you hear a knock on the door.', null),
+  new Dialog('106', '"Go get your things together, hurry!"', null, 'left', ['liuyuan', 'liusu_green']),
+  new Narrative('107', 'The two of you rush around the house and stuff your bags, and lie down on the truck Liuyuan gets.', null),
+  new Dialog('106', '"My ship wasn\'t able to leave"', null, 'left'),
+  new Dialog('106', 'Now I am trapped here.', null, 'left'),
+  new Narrative('107', 'Along with other first class passengers on the ship, you stay in the Repulse Bay Hotel for a couple of days. Guests are offered just enough food to sustain.', null),
 
 
   
 
 
   
-
-
   
   
-  
-  // choice2 - insist on wearing them yourslef
 
 
 
