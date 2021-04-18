@@ -130,7 +130,7 @@ const textList = [
   new Dialog('98', '"But I don\'t want to be the bad guy who hurts you in the end. I know Chinese people value marriage, and maybe you need one right now, just like all other girls I\'ve talked to in this party."', null, 'left'),
   new Dialog('99', '"I don\'t want to marry anyone for the time being. Maybe one day I will, but certainly not now, not in the near future."', null, 'left'),
   //button here: you cannot breathe
-  new Narrative('100', 'Seeing you have been silent, he goes on. ', null, 'left', ['liuyuan', 'liusu_green']),
+  new Narrative('100', 'Seeing you have been silent, he goes on. ', null, ['liuyuan', 'liusu_green']),
   new Narrative('101', 'I do business in Hong Kong a lot, and I think you would like it there too. We can go dancing, go to  watch operas, go shopping...', null, 'left'),
   new Narrative('102', 'Bullshit! You feel that you are being played by him in his hands. Clearly, he wants you, but he doesn\'t want to marry you.', null),
   new Narrative('103', 'His innocence is fake - it\'s just that he doesn\'t want to take that responsibility. Without a legal marriage, you will never have long-term security. ', null),
