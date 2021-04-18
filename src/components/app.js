@@ -111,7 +111,10 @@ export default class App extends Component {
       isCurrentChapterEnded: false,
     }, 
     // Populate the first passage in next story node.
-    this.nextText
+    () => {
+      this.nextText();
+      this.props.onBackgroundColorChange(this.storyNode.backgroundColor);
+    }
     );
   }
 
