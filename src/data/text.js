@@ -106,7 +106,7 @@ const textList = [
   new Narrative('76', 'Several songs have played, but to you, soon the music ends - you never know the time topass so quickly.', null),
   new Dialog('77', '“You know, we should dance all night. You are born for the dance floor!"', null, 'left', ['liuyuan', 'liusu_green']),
   new Narrative('78', 'He leaves a gentle kiss on your hand and winks.', null),
-  new Dialog('79', '"But now, you must be tired, I\'ll go and get you some drinks."', 'left', null),
+  new Dialog('79', '"But now, you must be tired, I\'ll go and get you some drinks."', 'left', null, ['liuyuan', 'liusu_green']),
   new Narrative('80', 'The warmth of his lips left on your hand takes your breath away, blanking your mind for a second.', null, ['liuyuan', 'liusu_green']),
   //button here: take a break
   new Narrative('81', 'As soon as you sit down for some rest, the old Lady Bai and your sisters-in-law come over with Baoluo crying.', null, ['old_lady_bai', 'liusu_green']),
