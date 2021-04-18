@@ -58,9 +58,9 @@ const textList = [
   // new Narrative('33', 'After all, who would take your remarriage seriously? And, is a remarriage that important to you?', null),
   // new Narrative('34', 'At the appointed time, all family members cram into a taxi-cab.', null, ['taxi', 'liusu_green']),
   //button here: Arrive at Paramount (GiCarWheel)
-  // new Narrative('35', 'As the largest ballroom in Shanghai, Paramount shines with dazzling lights under the night sky. It\'s been too long since the last time you\'ve to a place like this. ', null, ['baoluo', 'liusu_earrings']),
-  // new Narrative('36', 'As you are stunned by its glory, you hear a voice inside your mind:', null),
-  // new Dialog('37', '"This could be an important night that will change your life. You might want to think twice before you make a decision. Would you like to learn more before you walk into that door?"', null),
+  new Narrative('35', '0'),
+  new Narrative('36', '0', null),
+  new Dialog('37', '0', null),
   // button here: Walk inside
   new Narrative('38', 'The family is immediately led inside. In the center of the lobby, a group of women surround a young man who is smiling gently and talking. It’s as if being surrounded is a thing that relaxes him.', null, ['baoluo', 'liusu_green']),
   new Dialog('39', '"That must be Liuyuan!"', null, 'left', ['baoluo', 'liusu_green']),
