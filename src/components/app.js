@@ -66,14 +66,14 @@ export default class App extends Component {
     
     if (this.storyNode.textIndex < this.storyNode.textContentList.length) {
       // Show next text.
+      console.log(`abc=story id: ${this.storyNode.id}`);
+      console.log(`abc=text index: ${this.storyNode.textIndex}`);
       var textContent = this.storyNode.textContentList[this.storyNode.textIndex];
       allTextContent.push(textContent);
       this.storyNode.textIndex += 1;
       this.setState({
         allTextContent,
       });
-      console.log(`left image: ${textContent.images[0]}`);
-      console.log(`right image: ${textContent.images[1]}`);
       // Update images if they appear in [textContent].
       if (textContent.images != null) {
         if (textContent.images[0] != null) {
