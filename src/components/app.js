@@ -77,12 +77,14 @@ export default class App extends Component {
       // Update images if they appear in [textContent].
       if (textContent.images != null) {
         if (textContent.images[0] != null) {
+          console.log(`abc=left image: ${textContent.images[0]}`);
           this.setState({ leftImage: imagesMap[textContent.images[0]] });
           if (imagesMap[textContent.images[0]] instanceof InteractiveItem) {
             this.setState({ isActionPending: true });
           }
         }
         if (textContent.images[1] != null) {
+          console.log(`abc=right image: ${textContent.images[1]}`);
           this.setState({ rightImage: imagesMap[textContent.images[1]] });
         }
       }

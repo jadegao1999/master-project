@@ -69,7 +69,6 @@ export default class TextArea extends Component {
         className += ' narrative-text-item';
       } else if (textContent instanceof Dialog) {
         let isLeft = this.isDialogOnLeft(textContent);
-        console.log(`No: ${i}, isDialogLeft: ${isLeft}`);
         className += ' dialog-text-item';
         className += isLeft ? 
             ' bubble-left' : 

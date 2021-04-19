@@ -131,7 +131,7 @@ const textList = [
   new Dialog('99', '"I don\'t want to marry anyone for the time being. Maybe one day I will, but certainly not now, not in the near future."', null, 'left', ['liuyuan', 'liusu_green']),
   //button here: you cannot breathe
   new Narrative('100', 'Seeing you have been silent, he goes on. ', null, ['liuyuan', 'liusu_green']),
-  new Narrative('101', 'I do business in Hong Kong a lot, and I think you would like it there too. We can go dancing, go to  watch operas, go shopping...', null, 'left'),
+  new Narrative('101', 'I do business in Hong Kong a lot, and I think you would like it there too. We can go dancing, go to  watch operas, go shopping...', null),
   new Narrative('102', 'Bullshit! You feel that you are being played by him in his hands. Clearly, he wants you, but he doesn\'t want to marry you.', null),
   new Narrative('103', 'His innocence is fake - it\'s just that he doesn\'t want to take that responsibility. Without a legal marriage, you will never have long-term security. ', null),
   new Narrative('104', 'But on the other hand, so what? He likes you, and you may never meet another man like him again. ', null),
