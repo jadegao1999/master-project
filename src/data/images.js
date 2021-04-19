@@ -23,7 +23,7 @@ export const imagesMap = {
   baoluo: new Person('baoluo', 'baoluo', baoluo),
   baoluo_earrings: new Person('baoluo_earrings', 'baoluo_earrings', baoluo_earrings), 
   jiang_card: new Item('jiang_card', 'jiang_card', jiang_card),
-  jiang: new Item('jiang', 'jiang', jiang),
+  jiang: new Person('jiang', 'jiang', jiang),
   door: new Item('door', 'door', door),
   earrings: new InteractiveItem('earrings', 'earringbox', earrings),
   green_dress: new InteractiveItem('green_dress', 'green_dress', green_dress),
