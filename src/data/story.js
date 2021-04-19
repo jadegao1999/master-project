@@ -99,7 +99,7 @@ const storyNodeMap = {
 
   12: new StoryNode(
     '12', 
-    [textMap['81'], textMap['82'], textMap['83'], textMap['84'], textMap['85'], textMap['86'], textMap['87'], textMap['88'], textMap['89']], 
+    [textMap['81'], textMap['82'], textMap['83'], textMap['84'], textMap['85'], textMap['86'], textMap['87'], textMap['88'], textMap['89'], [textMap['90'], textMap['91'], textMap['92'],], 
     ['13', '14'],
     ['Follow Liuyuan', 'Stay and apologize to Baoluo'],
     '9PM, Dec 1st, 1941',
