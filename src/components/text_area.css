@@ -125,6 +125,13 @@
   background-color: #B19FA4;
 }
 
+.jiang {
+  color: #bdc1d4;
+}
+.jiang p {
+  background-color: #bdc1d4;
+}
+
 /* React CSS Transition rules */
 
 @keyframes fadeIn {
